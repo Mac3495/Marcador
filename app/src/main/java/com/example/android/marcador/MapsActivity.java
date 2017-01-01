@@ -16,6 +16,8 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+//Para que el fragment del mapa tengo ToolBar solo se debe cambiar la extencion a AppCompactActivity
+
 public class MapsActivity extends AppCompatActivity implements OnMapReadyCallback , GoogleMap.OnMarkerClickListener{
 
     private GoogleMap mMap;
