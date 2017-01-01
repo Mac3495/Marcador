@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/acerca"
+        android:title="Acerca de"/>
+
+    <item android:id="@+id/mensaje"
+        android:title="Mensaje"/>
+
+    <item android:id="@+id/btn"
+        android:title="Boton"
+        android:icon="@mipmap/ic_launcher"
+        app:showAsAction="always"/>
+
+</menu>
