@@ -16,12 +16,12 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-//Para que el fragment del mapa tengo ToolBar solo se debe cambiar la extencion a AppCompactActivity
+//Para que el fragment del mapa tenga ToolBar solo se debe cambiar la extencion a AppCompactActivity
 
 public class MapsActivity extends AppCompatActivity implements OnMapReadyCallback , GoogleMap.OnMarkerClickListener{
 
     private GoogleMap mMap;
-    Marker m1,m2,m3;
+    private Marker m1,m2,m3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,11 +47,6 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        // Add a marker in Sydney and move the camera
-        /*
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        */
-
         //Adiciona un marcador al mapa
         LatLng sydney = new LatLng(-34, 151);
         m1 = mMap.addMarker(new MarkerOptions().position(sydney).title("sidney")
@@ -71,7 +66,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         //Posicion de la camara
         mMap.moveCamera(CameraUpdateFactory.newLatLng(laPaz));
 
-        //Habilita el onMarckerClickListenet
+        //Habilita el onMarckerClickListener
         googleMap.setOnMarkerClickListener(this);
 
     }
